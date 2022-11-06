@@ -1,3 +1,4 @@
+import { ok } from "assert";
 import Web3 from "web3";
 import fetch from "node-fetch";
 import { loadRemoteVersion, SolcCompiler } from "solc";
@@ -25,8 +26,8 @@ const extractMinorPatch = (solcVersion: string) => {
  */
 const processBytecode = (bytecode: string, solcVersion: string) => {
   const [solcMinor, solcPatch] = extractMinorPatch(solcVersion);
-  var startingPoint = 0;
-  var endingPoint = bytecode.length;
+  let startingPoint = 0;
+  let endingPoint = bytecode.length;
   if (solcMinor >= 4 && solcPatch >= 22) {
     startingPoint = bytecode.lastIndexOf("6080604052");
     endingPoint = bytecode.search("a165627a7a72305820");
@@ -49,8 +50,9 @@ const loadSolc = async (version: string): Promise<SolcCompiler> => {
           if (error) {
             return reject(error);
           }
-          solcCache[version] = solcInstance!;
-          return resolve(solcInstance!);
+          ok(solcInstance);
+          solcCache[version] = solcInstance;
+          return resolve(solcInstance);
         }
       );
   });

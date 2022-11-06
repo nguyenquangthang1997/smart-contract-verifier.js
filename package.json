@@ -9,9 +9,6 @@
     "dist"
   ],
   "scripts": {
-    "run": "ts-node --esm src/index.ts",
-    "run:inspect": "node --inspect --require ts-node/register src/index.ts",
-    "run:debug": "node debug src/index.ts",
     "lint:prettier": "prettier --check src docs .github *.md",
     "format:prettier": "prettier --write src docs .github *.md",
     "lint:eslint": "eslint src",
