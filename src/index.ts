@@ -76,6 +76,11 @@ const compileExtract = async (
   return compiledBytecode;
 };
 
+/**
+ * Compile the contracts `sources` and compare the bytecode output with the
+ * on-chain one deployed at the given `contractAddress`.
+ * @returns True if the code matches, false otherwise.
+ */
 const compileExtractCompare = async (
   web3: Web3,
   sources: Record<string, string>,
@@ -103,7 +108,7 @@ const compileExtractCompare = async (
 };
 
 /**
- * Returns all the solc versions, excluding nightly.
+ * @returns All the solc versions, excluding the nightly builds.
  */
 const listVersions = async () => {
   const url =

@@ -1,6 +1,7 @@
 # Smart Contract Verifier
 
 [![Tests](https://github.com/AndreMiras/smart-contract-verifier.js/workflows/Tests/badge.svg)](https://github.com/AndreMiras/smart-contract-verifier.js/actions/workflows/tests.yml)
+[![Documentation](https://github.com/AndreMiras/smart-contract-verifier.js/workflows/Documentation/badge.svg)](https://github.com/AndreMiras/smart-contract-verifier.js/actions/workflows/documentation.yml)
 [![npm version](https://badge.fury.io/js/smart-contract-verifier.svg)](https://badge.fury.io/js/smart-contract-verifier)
 
 Smart contract verification library.
