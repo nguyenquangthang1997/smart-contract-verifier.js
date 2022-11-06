@@ -1,6 +1,6 @@
 {
   "name": "smart-contract-verifier",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "description": "Smart Contract Verifier",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
