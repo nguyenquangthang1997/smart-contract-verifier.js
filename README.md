@@ -8,6 +8,9 @@ Smart contract verification library.
 
 Makes it possible to verify some contract code against a deployed contract address.
 
+Originally inspired by Shawn's article:
+[Verify Ethereum Contracts Using Web3.js and Solc](https://www.shawntabrizi.com/ethereum/verify-ethereum-contracts-using-web3-js-and-solc/)
+
 # Usage example
 
 ```js
