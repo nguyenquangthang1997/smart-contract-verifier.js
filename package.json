@@ -1,5 +1,5 @@
 {
-  "name": "smart-contract-verifier",
+  "name": "solidity-smart-contract-verifier",
   "version": "1.0.0",
   "description": "Smart Contract Verifier",
   "main": "dist/index.js",
@@ -17,10 +17,7 @@
     "format": "yarn format:prettier && yarn format:eslint",
     "build": "tsc"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/AndreMiras/smart-contract-verifier.js.git"
-  },
+  "repository": "https://github.com/nguyenquangthang1997/smart-contract-verifier.js",
   "keywords": [
     "ethereum",
     "smart contract",
@@ -30,9 +27,9 @@
   "author": "Andre Miras",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AndreMiras/smart-contract-verifier.js/issues"
+    "url": "https://github.com/nguyenquangthang1997/smart-contract-verifier.js/issues"
   },
-  "homepage": "https://github.com/AndreMiras/smart-contract-verifier.js",
+  "homepage": "https://github.com/nguyenquangthang1997/smart-contract-verifier.js",
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
